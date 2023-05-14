@@ -6,6 +6,8 @@ public class FlipCoin {
     public static void main(String[] args) {
 
        coin();
+        leapYear();
+        primeFactor();
     }
     public static void coin(){
         if(Math.random()<0.5){
@@ -22,6 +24,21 @@ public class FlipCoin {
             System.out.println("Leap Year");
         }else{
             System.out.println("Not a Leap Year");
+        }
+    }
+    public static void primeFactor(){
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        int count=0;
+        for(int i=2;i<=num-1;i++){
+            if(num%i==0){
+                count++;
+            }
+        }
+        if(count==0){
+            System.out.println("Prime Number");
+        }else{
+            System.out.println("Not a prime number");
         }
     }
 }
