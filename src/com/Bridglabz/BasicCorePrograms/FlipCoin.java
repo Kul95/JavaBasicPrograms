@@ -5,10 +5,12 @@ import java.util.Scanner;
 public class FlipCoin {
     public static void main(String[] args) {
 
+
        coin();
         leapYear();
         primeFactor();
         powerOfTwoTable();
+        harmonicSum();
     }
     public static void coin(){
         if(Math.random()<0.5){
@@ -50,4 +52,15 @@ public class FlipCoin {
             System.out.println(num+" *"+i+"="+num*i);
         }
     }
+    public static void  harmonicSum(int n){
+     double s=0;
+     int n=5;
+     for(double i=1;i<=n;i++){
+         s=s+1/i;
+         System.out.println(s);
+         System.out.println(harmonicSum(n));
+     }
+
+    }
+
 }
