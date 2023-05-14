@@ -8,6 +8,7 @@ public class FlipCoin {
        coin();
         leapYear();
         primeFactor();
+        powerOfTwoTable();
     }
     public static void coin(){
         if(Math.random()<0.5){
@@ -39,6 +40,14 @@ public class FlipCoin {
             System.out.println("Prime Number");
         }else{
             System.out.println("Not a prime number");
+        }
+    }
+    public static void powerOfTwoTable(){
+
+        Scanner sc=new Scanner(System.in);
+        int num=sc.nextInt();
+        for(int i=1;i<=num;i++){
+            System.out.println(num+" *"+i+"="+num*i);
         }
     }
 }
